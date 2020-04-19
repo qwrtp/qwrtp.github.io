@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="page blog-index">
+  <h1>Bloggie Blog</h1>
+  <div class="col-two blog-cols">
+    <div class="col col-aside blog-recent">
+      <h4>Recent Posts</h4>
+      {% include blog-index.html %}
+    </div>
+    <div class="col col-content blog-previews">
+      {% include post-excerpt.html %}
+    </div>
+  </div>
+</div>
