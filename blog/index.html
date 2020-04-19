@@ -10,7 +10,9 @@ layout: default
       {% include blog-index.html %}
     </div>
     <div class="col col-content blog-previews">
-      {% include post-excerpt.html %}
+      {% for post in site.posts %}
+      {% include post-excerpt.html  %}
+      {% endfor %}
     </div>
   </div>
 </div>
